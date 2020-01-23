@@ -1,6 +1,6 @@
 import { Products } from './../products';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ParamMap } from '@angular/router';
+import { ActivatedRoute, ParamMap, Router } from '@angular/router';
 import { HttpService } from '../http.service';
 
 @Component({
@@ -10,7 +10,8 @@ import { HttpService } from '../http.service';
 })
 export class ProductsComponent implements OnInit {
 
-  constructor(private route:ActivatedRoute,private http:HttpService) { }
+  constructor(private route:ActivatedRoute,private http:HttpService
+    ,private router:Router) { }
   
   products:Products[]=[];
   imageUrl='../../assets/images/'
@@ -30,6 +31,11 @@ export class ProductsComponent implements OnInit {
           console.log(e)
         }
       })
+  }
+
+
+  public goToProductDetails(id){
+    this.router.navigate(['/productdetails/'+id]);
   }
 
 }
