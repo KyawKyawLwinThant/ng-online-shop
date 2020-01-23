@@ -1,0 +1,15 @@
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4" *ngFor="let item of products">
+               <div class="card">
+               <img style="height: 280px" [src]="'../../assets/images/'+item.name+'.jpeg'" class="card-img-top" alt="Card image cap">
+               </div> 
+               <div class="card-body">
+               <h5 class="card-title">{{item.name}}</h5>
+               </div>
+        </div>
+    </div>
+</div>
