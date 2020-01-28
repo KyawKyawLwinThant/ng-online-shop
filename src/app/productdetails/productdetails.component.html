@@ -1,4 +1,16 @@
 
+ <section>
+    <div class="row my-3">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-2">
+        <span><a (click)="viewCart()"> <i class="fas fa-cart-plus fa-3x mr-3"></i> </a> {{cartSize()}}</span>
+        </div>
+    </div>
+</section>
 
 
 <div class="container">
@@ -13,5 +25,9 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi, dolore officiis quis pariatur eligendi numquam ratione beatae porro tempore dolores nam suscipit. Odio placeat provident, deserunt quod ipsam ducimus rerum!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus inventore placeat ducimus vel architecto eius commodi quaerat impedit accusantium, quidem voluptatem et, nemo eveniet qui? Itaque non alias perferendis doloremque.</p>
         </div>
+    </div>
+    <div class="row mb-5">
+        <a class="btn btn-primary mx-3" (click)="addToCart()">Add To Cart</a>
+        <a class="btn btn-primary mx-3" (click)="continueShopping()">Continue Shopping</a>
     </div>
 </div>
