@@ -32,5 +32,15 @@ export class CartService {
     return of(this.cart.length);
   }
 
+  getCart():Observable<Products[]>{
+    return of(this.cart);
+  }
+
+  clearCart():Observable<Products[]>{
+    this.cart=[];
+
+    return of(this.cart);
+  }
+
 
 }

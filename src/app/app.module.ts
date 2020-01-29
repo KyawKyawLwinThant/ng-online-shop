@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { FilenotfoundComponent } from './filenotfound/filenotfound.component';
 import { ProductdetailsComponent } from './productdetails/productdetails.component';
 import { CartviewComponent } from './cartview/cartview.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { CartviewComponent } from './cartview/cartview.component';
     AboutComponent,
     FilenotfoundComponent,
     ProductdetailsComponent,
-    CartviewComponent
+    CartviewComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,

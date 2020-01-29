@@ -1,1 +1,22 @@
-<p>cartview works!</p>
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4" *ngFor="let item of carts">
+               <div class="card">
+               <img style="height: 280px" [src]="'../../assets/images/'+item.name+'.jpeg'" class="card-img-top" alt="Card image cap">
+               </div> 
+               <div class="card-body">
+               <h5 class="card-title">{{item.name}}</h5>
+               </div>
+        </div>
+    </div>
+<div class="row my-5">
+    <a class="btn btn-primary mr-3" (click)="goHome()">Continue Shopping</a>
+    <a class="btn btn-primary mr-3" (click)="clearCart()">Clear Cart</a>
+    <a class="btn btn-primary" (click)="checkout()">Check Out</a>
+</div>
+</div>
+
